@@ -1,0 +1,543 @@
+*
+{
+    margin: 10;
+    padding: 10;
+}
+
+body{
+    width: 1005px;
+    min-height: 96vh;
+    box-sizing: content-box;
+    background: linear-gradient(to bottom, rgb(69, 195, 236), blue );
+    position:relative;
+}
+
+.container{
+    position: relative;
+    width: 975px;
+    height: 100%;
+}
+
+.pageHead{
+    position: relative;
+    background: hsla(0, 0%, 100%, 0.199);
+    width: 95%;
+    height: 50px;
+    margin-left:   20px;
+}
+
+.sssTitle{
+    position: relative;
+    left: 7%;
+    color: rgb(34, 20, 116);
+    font-size: 30px;
+    font-family: papyrus, fantasy;
+}
+
+.changer{
+    position: absolute;
+    width: 40px;
+    height: 19px;
+    left: 45%;
+    top: 11px;
+    border: solid;
+    border-color:  rgb(34, 20, 116);
+    border-radius: 20px;
+}
+
+.changer::before{
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 17px;
+    right: 20px;
+    top: 1px;
+    border-radius: 50px;
+    background: rgb(34, 20, 116);
+    cursor: pointer;
+    transform: 0.4s;
+}
+
+.sunNmoon{
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    width: 200px;
+    height: 176px;
+    background-image: url("morning/morningSun.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.clouds{
+    position: absolute;
+    top: 80px;
+    left: 40%;
+    width: 500px;
+    height: 96px;
+    background-image: url("morning/morningClouds.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.street{
+    position: absolute;
+    top: 280px;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-image: url("morning/morningStreet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.SSS{
+    position: absolute;
+    top: 240px;
+    left: 47%;
+    width: 130px;
+    height: 260px;
+    background-image: url("morning/morningSSS.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.changer.pm{
+    border-color: rgb(251, 255, 0);
+}
+
+.changer.pm::before{
+    left: 19px;
+    background: rgb(251, 255, 0);
+}
+
+.body.pm{
+    background: linear-gradient(to bottom, rgb(99, 96, 96), black);
+}
+
+.sssTitle.pm{
+    color: yellow;
+}
+
+.sunNmoon.pm{
+    background-image: url("night/nightMoon.png");
+    top: 70px;
+    left: 100px;
+    width: 180px;
+    height: 146px;
+}
+
+.clouds.pm{
+    background-image: url('night/nightClouds.png');
+}
+
+.street.pm{
+    background-image: url('night/nightStreet.PNG');
+}
+
+.SSS.pm{
+    background-image: url('night/nightSSS.PNG');
+}
+
+:root{
+    --cone: "M253.5 1H174.5L1 321H422L253.5 1Z";
+    --mini: "M211.917 1H146.24L2 141H352L211.917 1Z";
+}
+
+.dim{
+    position: absolute;
+    top: 295px;
+    left: 35%;
+    width: 350px;
+    height: 140px;
+    clip-path: path(var(--mini));
+    background-image: url('morning/morningStreet.PNG');
+    background-position: -338px 7%;
+    background-repeat: no-repeat;
+    background-size: 970px 349px;
+    opacity: 0;
+}
+
+.dim.pm{
+    opacity: 1;
+}
+
+.human{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    width: 90px;
+    height: 110px;
+    background-image: url('human/F1.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.human:hover{
+    cursor: pointer;
+}
+
+.bright{
+    position: absolute;
+    top: 283px;
+    left: 32%;
+    width: 450px;
+    height: 330px;
+    clip-path: path(var(--cone));
+    background-image: url('morning/morningStreet.PNG');
+    background-position: 59% 8%;
+    background-repeat: no-repeat;
+    background-size: 970px 347px;
+    opacity: 0;
+}
+
+.bright.pm{
+    opacity: 1;
+}
+
+
+.charges.cp{
+    position: absolute;
+    top: 370px;
+    left: 55%;
+    width: 30px;
+    height: 40px;
+    background-image: url('handphone/cp.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.human.pm{
+    top: 450px;
+    left: 300px;
+}
+
+.SSS.bri{
+    background-image: url('night/nightSSSb.PNG');
+}
+
+.chargeLabel{
+    position: absolute;
+    top: 375px;
+    left: 465px;
+    width: 60px;
+    height: 20px;
+    background-image: url('handphone/sms.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+}
+
+.android{
+    position: absolute;
+    top: 9px;
+    left: 90%;
+    width: 50px;
+    height: 30px;
+    background-image: url('handphone/glass.PNG');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.android:hover{
+    cursor: pointer;
+    background-image: url('handphone/glassy.PNG');
+}
+
+.screen1{
+    position: absolute;
+    top: 35px;
+    left: 64%;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(12, 129, 150);
+    border: 1px solid;
+    text-align: center;
+    border-radius: 5%;
+    display: none;
+}
+
+.head1, .head2{
+    position: relative;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(27, 16, 77);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.head1{
+    padding-top: 70px;
+}
+
+.passLabel{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 1px;
+    font-size: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.pass{
+    position: relative; 
+    margin-top: 1px;
+    width: 120px;
+    height: 20px;
+    text-align: center;
+}
+
+.login{
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(77, 148, 104);
+    color: white;
+    border: 0;
+    width: 160px;
+    height: 25px;
+}
+
+.login:hover{
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.top{
+    position: relative;
+    text-align:left;
+    background-color: black;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.time{
+    position: static;
+    margin-top: 0;
+    margin-left: 6px;
+    color: white;
+    font-size: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.batMaliit{
+    position: absolute;
+    margin-top: 0px;padding-top: 0px;
+    top: 0px;
+    left: 85%;
+    width: 30px;
+    height: 18px;
+    background-image: url('handphone/bat.PNG');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.screen2{
+    position: absolute;
+    top: 35px;
+    left: 64%;
+    width: 250px;
+    height: 300px;
+    background-color: rgb(12, 129, 150);
+    border: 1px solid;
+    text-align: center;
+    border-radius: 5%;
+    display: none;
+}
+
+.batCharge{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-bottom: 0px;
+    background-image: url('handphone/batCharge.PNG');
+    width: 70px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stateOfCharge{
+    position: relative;
+    margin-top: 1px;
+    font-size: 11px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.emergencyMode{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(51, 146, 146);
+    width: 150px;
+    height: 20px;
+    text-align: left;
+}
+
+.emergencyLabel{
+    position: relative;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.emergencyChanger{
+    position: absolute;
+    width: 20px;
+    height: 9px;
+    left: 80%;
+    top: 3px;
+    border: 2px solid;
+    border-color:  rgb(34, 20, 116);
+    border-radius: 20px;
+}
+    
+.emergencyChanger::before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    right: 11px;
+    top: 1px;
+    border-radius: 50px;
+    background: rgb(34, 20, 116);
+    cursor: pointer;
+    transform: 0.4s;
+}
+
+.emergencyChanger.pm{
+    border-color: rgb(251, 255, 0);
+}
+
+.emergencyChanger.pm::before{
+    left: 11px;
+    background: rgb(251, 255, 0);
+}
+
+.sensorMode{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(51, 146, 146);
+    width: 150px;
+    height: 20px;
+    text-align: left;
+}
+
+.sensorLabel{
+    position: relative;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sensorChanger{
+    position:absolute;
+    top: 159px;
+    left: 70%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chartreuse;
+}
+
+.sensorChanger.off{
+    color: rgb(255, 0, 0);
+}
+
+.chargeMode{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+    background-color: rgb(51, 146, 146);
+    width: 150px;
+    height: 20px;
+    text-align: left;
+}
+
+.chargingLabel{
+    position: relative;
+    padding-top: 2px;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chargeChanger{
+    position: absolute;
+    width: 20px;
+    height: 9px;
+    left: 80%;
+    top: 3px;
+    border: 2px solid;
+    border-color: rgb(251, 255, 0);
+    border-radius: 20px;
+}
+    
+.chargeChanger::before{
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    left: 11px;
+    top: 1px;
+    border-radius: 50px;
+    background: rgb(251, 255, 0);
+    cursor: pointer;
+    transform: 0.4s;
+}
+
+.chargeChanger.off{
+    border-color: rgb(34, 20, 116);
+}
+
+.chargeChanger.off::before{
+    left: 2px;
+    background: rgb(34, 20, 116);
+}
+
+.logout{
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(77, 148, 104);
+    color: white;
+    border: 0;
+    width: 160px;
+    height: 25px;
+}
+
+.logout:hover{
+    border: 1px solid black;
+    opacity: .7;
+}
+
+.SSS.anpm{
+    background-image: url('morning/morningSSSb.PNG');
+}
+
+.SSS.anam{
+    background-image: url('night/nightSSSoff.PNG');
+}
+
+.cp.off{
+    background-image: url('handphone/nocp.PNG');
+    opacity: 1;
+}
+
+.passCheck{
+    position: absolute;
+    top: 160px;
+    left: 43%;
+    width: 30px;
+    height: 20px;
+    background-color: rgba(70, 165, 165, 0.61);
+    display: none;
+}
